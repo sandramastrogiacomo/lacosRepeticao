@@ -4,5 +4,5 @@
 /**
  * 
  */
-module exerciciosLacosRepeticao {
+module exerciciosLacosRepeticao1 {
 }

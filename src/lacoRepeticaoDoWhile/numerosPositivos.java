@@ -10,23 +10,22 @@ public class numerosPositivos {
 		int numero;
 		int soma = 0;
 		
-		System.out.println("Digite somente números inteiros (para PARAR digite 0)");
+		do {			
+		     System.out.println("Digite somente números inteiros (para PARAR digite 0)");
+		     numero = leia.nextInt();
+		     
+		     if (numero > 0) {
+		    	 soma += numero;
+		     }
 		
-		while (true) {
-			numero = leia.nextInt();
-			
-			if (numero == 0) {
-				break;
-			}
-			
-			if (numero > 0) {
-				soma += numero;
-			}
-		}
-         
-		System.out.println("A soma dos números positivos digitados é: " + soma);
+		} while (numero != 0);
+		
+		System.out.println("A soma dos números digitados é:  " + soma);
 		
 		leia.close();
+		
 	}
-
 }
+
+		
+		

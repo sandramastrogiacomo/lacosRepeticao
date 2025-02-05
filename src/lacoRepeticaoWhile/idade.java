@@ -11,15 +11,9 @@ public class idade {
 		int totalMaior50 = 0;
 		int idade;
 		
-		while (true) {
-			System.out.println("Digite a idade (para sair, digite um número negativo): ");
-			idade = leia.nextInt();
-			
-			if (idade < 0) {
-				break;
-				
-			}
-			
+		System.out.println("Digite a idade (para sair, digite um número negativo): ");
+		
+		while ((idade = leia.nextInt()) >=0) {
 			if (idade < 21) {
 				totalMenor21++;
 			} else if (idade > 50) {
